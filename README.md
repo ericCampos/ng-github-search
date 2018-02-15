@@ -1,5 +1,27 @@
 # GithubSearch
 
+Simple Angular 2 app that connects to the Github API and retrieves public user data.
+
+This app is done with the only purpose of learning and as a portfolio.
+
+If you want to clone it you will have to place your GitHub client_id & client_secret at: ```/src/app/services/github.service.ts```
+
+``` 
+@Injectable()
+export class GithubService {
+    private username:string;
+    private client_id = 'YOUR_CLIENT_ID_HERE';
+    private client_secret = 'YOUR_CLIENT_SECRET_HERE';
+    
+    ...
+```
+
+You can get them following [this](https://developer.github.com/v3/guides/basics-of-authentication/#registering-your-app).
+
+You can see a **live example** of this app [here](https://ng-github-search.herokuapp.com/).
+
+## Setup Details
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
 ## Development server
